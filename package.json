@@ -1,0 +1,33 @@
+{
+  "name": "draft-js-simpledecorator",
+  "version": "1.0.0",
+  "description": "Create a Draft.Decorator simply, with more flexibility than Draft.CompositeDecorator",
+  "main": "index.js",
+  "scripts": {
+    "test": "export TESTING=true; mocha --reporter spec --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soreine/draft-js-simpledecorator.git"
+  },
+  "keywords": [
+    "draft-js",
+    "decorator"
+  ],
+  "author": "Soreine <soreine.plume@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Soreine/draft-js-simpledecorator/issues"
+  },
+  "homepage": "https://github.com/Soreine/draft-js-simpledecorator#readme",
+  "dependencies": {
+    "immutable": "*"
+  },
+  "devDependencies": {
+    "draft-js": "^0.7.0",
+    "expect": "^1.20.1",
+    "mocha": "^2.5.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
