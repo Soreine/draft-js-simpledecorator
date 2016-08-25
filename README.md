@@ -79,7 +79,7 @@ const hexColorDecorator = new SimpleDecorator(
 )
 ```
 
-To do that in Draft, you could not use `Draft.CompositeDecorator`. Instead, you would have to re-implement the [`DecoratorType` interface](interface) yourself.
+To do that in Draft, you would not be able to use `Draft.CompositeDecorator`. Instead, you would have to re-implement the [`DecoratorType` interface](interface) yourself.
 
 #### See also
 
