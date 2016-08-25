@@ -1,6 +1,6 @@
 {
   "name": "draft-js-simpledecorator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a Draft.Decorator as simply as with Draft.CompositeDecorator, with the flexibility of passing custom props.",
   "main": "index.js",
   "scripts": {
