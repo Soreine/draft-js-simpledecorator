@@ -1,7 +1,7 @@
 {
   "name": "draft-js-simpledecorator",
   "version": "1.0.0",
-  "description": "Create a Draft.Decorator simply, with more flexibility than Draft.CompositeDecorator",
+  "description": "Create a Draft.Decorator as simply as with Draft.CompositeDecorator, with the flexibility of passing custom props.",
   "main": "index.js",
   "scripts": {
     "test": "export TESTING=true; mocha --reporter spec --bail"
