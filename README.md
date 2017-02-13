@@ -27,7 +27,7 @@ var Draft = require('draft-js');
 var SimpleDecorator = require('draft-js-simpledecorator');
 
 var decorator = new SimpleDecorator(
-    function strategy(contentBlock, callback) {
+    function strategy(contentBlock, callback, contentState) {
         // Decorate any span of text in the content block,
         // providing custom props!
         var customProps = {};
@@ -49,7 +49,7 @@ Below is an example decorator that finds any _hexadecimal color code_ (ex: `#ffc
 ```jsx
 const hexColorDecorator = new SimpleDecorator(
 
-    function strategy(contentBlock, callback) {
+    function strategy(contentBlock, callback, contentState) {
         const text = contentBlock.getText()
 
         // Match text like #ac00ff and #EEE
