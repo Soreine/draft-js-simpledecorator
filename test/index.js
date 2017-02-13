@@ -40,6 +40,18 @@ describe('SimpleDecorator', function() {
         ]);
     });
 
+    it('should pass contentState to strategy', function() {
+      var state = Draft.ContentState.createFromText('foobar');
+
+      function strategyWithContentState(contentBlock, callback, contentState) {
+        expect(contentState).toEqual(state);
+      }
+
+      var decorator = new SimpleDecorator(strategyWithContentState, getComponent);
+
+      decorator.getDecorations(block, state);
+    });
+
     it('should correctly resolve props for components', function() {
         var keys = [
             'blockKey-0',
@@ -58,4 +70,3 @@ describe('SimpleDecorator', function() {
         });
     });
 });
-
